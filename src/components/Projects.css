@@ -1,0 +1,91 @@
+/* project */
+
+
+.portfolio {
+  padding: 50px 10%;
+  /* background: var(--snd-bg-color); */
+  
+    background: linear-gradient(to right, rgba(174, 188, 186, 0.34), rgba(93, 93, 93, 0.75)),url(../../assets/svg/common-bg.svg);
+}
+.portfolio h2 {
+  font-size: 3.6rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 5rem;
+ 
+}
+.portfolio-item {
+  background: var(--bg-color);
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  border: 3px solid black;
+
+}
+
+.portfolio-item img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.portfolio-item p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--main-color);
+}
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+}
+
+
+
+@media (max-width: 768px) {
+  .portfolio-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+.view_btn {
+  display: inline-block; /* Ensure the boxes are inline */
+  padding: 1rem 2rem; /* Add padding for better spacing */
+  margin: 0.5rem; /* Add margin between skill boxes */
+  border: 3px solid black; /* Add a light border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color:rgb(230, 225, 225);
+  font-size: 1.4rem; /* Adjust font size */
+  font-weight: 600; /* Make the text bold */
+  color: #333; /* Text color */
+  text-align: center; /* Center the text */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+.view_btn:hover {
+  border-color: #007bff; 
+  background-color:rgba(188, 184, 197, 0.38); 
+  color: #007bff; 
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

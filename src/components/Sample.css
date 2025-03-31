@@ -1,0 +1,125 @@
+
+.about {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 2rem;
+  background-color: #f9f9f9; 
+  position: relative; 
+  z-index: 1; 
+}
+.new{
+  margin-top:120px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  margin-bottom: 2rem; 
+  padding: 1.5rem;
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+}
+
+.image {
+  flex: 1 1 30%; 
+  max-width: 30%; 
+  padding: 1rem;
+}
+
+.image img {
+  width: 100%; 
+  height: auto; 
+  max-height: 300px; 
+  border-radius: 10px; 
+  object-fit: cover; /* Ensure the image fits within its container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for the image */
+}
+
+/* Content container */
+.content {
+  flex: 1 1 60%; /* Allow the content to take up 60% of the row */
+  max-width: 60%; /* Ensure the content doesn't exceed 60% */
+  padding: 1rem;
+}
+
+.content h3 {
+  font-size: 2.5rem;
+  color: #130f40;
+  margin-bottom: 1rem;
+}
+
+.content h3 span {
+  color:rgb(140, 0, 255); /* Highlight color for the word "Pizza" */
+}
+
+.content p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+.btn {
+  gap: 1rem; /* Add gap between buttons */
+  margin-top: 1rem; /* Add spacing above the buttons */
+}
+
+.btn a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #7843E9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn a:hover {
+  background-color: #5a32b5;
+}
+
+.content .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #7843E9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+
+}
+.content .btn:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.content .btn:hover {
+  background-color: #5a32b5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack rows vertically on smaller screens */
+    padding: 1rem;
+  }
+
+  .image, .content {
+    flex: 1 1 100%; /* Make both image and content take full width */
+    max-width: 100%;
+  }
+
+  .image img {
+    max-height: 150px; /* Reduce image height for smaller screens */
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+}
